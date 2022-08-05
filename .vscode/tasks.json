@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "label": "cmake-build",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/build"
+            },
+            "command": "cmake",
+            "args": [
+                "--build",
+                "."
+            ]
+        },
+        {
+            "dependsOn": [
+                "cmake-build"
+            ],
+            "label": "build run",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/build"
+            },
+            "command": "./NewGame",
+            "args": [],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
