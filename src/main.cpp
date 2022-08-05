@@ -4,7 +4,7 @@ int main(int argc, const char** argv) {
     int screenWidth = 512;
     int screenHeight = 512;
 
-    InitWindow(screenWidth, screenHeight, "Tiny dungeon");
+    InitWindow(screenWidth, screenHeight, "New Game");
     SetTargetFPS(60);
 
     while (!WindowShouldClose())
